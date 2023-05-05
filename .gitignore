@@ -1,2 +1,3 @@
 /target/
 /.idea/
+/guice-dependency-injection.iml
