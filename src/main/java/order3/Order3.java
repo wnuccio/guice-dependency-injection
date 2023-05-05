@@ -1,17 +1,17 @@
 package order3;
 
 import com.google.inject.Inject;
-import strategy.OrderStrategy;
+import strategy.Strategy;
 
 public class Order3 {
-    private final OrderStrategy strategy;
+    private final Strategy strategy;
 
     @Inject
-    public Order3(OrderStrategy strategy) {
+    public Order3(Strategy strategy) {
         this.strategy = strategy;
     }
 
-    public OrderStrategy strategy() {
+    public Strategy strategy() {
         return strategy;
     }
 }

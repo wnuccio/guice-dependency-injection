@@ -1,9 +1,6 @@
 package order0;
 
 import com.google.inject.Inject;
-import strategy.OrderStrategy;
-import strategy.Strategy1;
-import strategy.Strategy2;
 
 public class Order0 {
     private Price price;

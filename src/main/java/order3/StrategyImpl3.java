@@ -1,13 +1,13 @@
 package order3;
 
 import com.google.inject.Inject;
-import strategy.OrderStrategy;
+import strategy.Strategy;
 
-public class OrderStrategyImpl3 implements OrderStrategy {
+public class StrategyImpl3 implements Strategy {
     private final Repository repository;
 
     @Inject
-    public OrderStrategyImpl3(Repository repository) {
+    public StrategyImpl3(Repository repository) {
         this.repository = repository;
     }
 
