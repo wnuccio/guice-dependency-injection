@@ -1,6 +1,9 @@
 package chapter3;
 
 
+import chapter3.servicelayer.Service1;
+import chapter3.servicelayer.Service2;
+import chapter3.servicelayer.UseCaseImpl;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.junit.jupiter.api.Test;
@@ -19,6 +22,7 @@ public class ControllerTest {
         assertTrue(order.useCase() instanceof UseCaseImpl);
         UseCaseImpl useCase = (UseCaseImpl) order.useCase();
 
-        assertTrue(useCase.repository() instanceof RepositoryImpl);
+        assertTrue(useCase.service1() instanceof Service1);
+        assertTrue(useCase.service2() instanceof Service2);
     }
 }

@@ -1,5 +1,6 @@
 package chapter3;
 
+import chapter3.servicelayer.UseCase;
 import com.google.inject.Inject;
 
 public class Controller {
