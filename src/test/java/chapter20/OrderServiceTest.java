@@ -1,11 +1,11 @@
 package chapter20;
 
 
+import chapter20.strategy.StrategyImpl1;
+import chapter20.strategy.StrategyImpl2;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.junit.jupiter.api.Test;
-import strategy.StrategyImpl1;
-import strategy.StrategyImpl2;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

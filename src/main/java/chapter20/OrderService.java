@@ -1,9 +1,6 @@
 package chapter20;
 
 import com.google.inject.Inject;
-import strategy.Strategy;
-import strategy.Strategy1;
-import strategy.Strategy2;
 
 public class OrderService {
     private Strategy strategy1;

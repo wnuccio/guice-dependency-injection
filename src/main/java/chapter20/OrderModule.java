@@ -1,11 +1,8 @@
 package chapter20;
 
+import chapter20.strategy.StrategyImpl1;
+import chapter20.strategy.StrategyImpl2;
 import com.google.inject.AbstractModule;
-import strategy.Strategy;
-import strategy.StrategyImpl1;
-import strategy.StrategyImpl2;
-import strategy.Strategy1;
-import strategy.Strategy2;
 
 public class OrderModule extends AbstractModule {
     @Override

@@ -1,4 +1,4 @@
-package strategy;
+package chapter20;
 
 import com.google.inject.BindingAnnotation;
 
@@ -13,5 +13,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({FIELD, PARAMETER, METHOD})
 @Retention(RUNTIME)
 @BindingAnnotation
-public @interface Strategy2 {
+public @interface Strategy1 {
 }

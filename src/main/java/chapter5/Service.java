@@ -1,4 +1,4 @@
-package chapter1;
+package chapter5;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
