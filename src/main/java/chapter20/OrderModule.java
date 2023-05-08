@@ -7,7 +7,7 @@ import strategy.StrategyImpl2;
 import strategy.Strategy1;
 import strategy.Strategy2;
 
-public class Order1Module extends AbstractModule {
+public class OrderModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(Strategy.class).annotatedWith(Strategy1.class).to(StrategyImpl1.class);

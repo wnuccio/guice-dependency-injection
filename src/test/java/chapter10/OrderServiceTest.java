@@ -26,7 +26,7 @@ public class OrderServiceTest {
 
     @Test
     public void testInjectionWithModule() {
-        Injector injector = Guice.createInjector(new Order0Module());
+        Injector injector = Guice.createInjector(new OrderModule());
         OrderService order = injector.getInstance(OrderService.class);
 
         assertNotNull(order.price());

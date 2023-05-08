@@ -13,7 +13,7 @@ public class OrderServiceTest {
 
     @Test
     public void testInjection() {
-        Injector injector = Guice.createInjector(new Order1Module());
+        Injector injector = Guice.createInjector(new OrderModule());
         OrderService order = injector.getInstance(OrderService.class);
 
         assertTrue(order.strategy1() instanceof StrategyImpl1);
