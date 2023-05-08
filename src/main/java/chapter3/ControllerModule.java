@@ -1,12 +1,11 @@
-package order3;
+package chapter3;
 
 import com.google.inject.AbstractModule;
-import strategy.Strategy;
 
-public class Order3Module extends AbstractModule {
+public class ControllerModule extends AbstractModule {
     @Override
     protected void configure() {
-        bind(Strategy.class).to(StrategyImpl3.class);
+        bind(UseCase.class).to(UseCaseImpl.class);
         bind(Repository.class).to(RepositoryImpl.class);
     }
 }

@@ -1,4 +1,4 @@
-package order1;
+package chapter1;
 
 import com.google.inject.AbstractModule;
 import strategy.Strategy;

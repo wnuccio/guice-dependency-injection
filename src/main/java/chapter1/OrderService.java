@@ -1,16 +1,16 @@
-package order1;
+package chapter1;
 
 import com.google.inject.Inject;
 import strategy.Strategy;
 import strategy.Strategy1;
 import strategy.Strategy2;
 
-public class Order1 {
+public class OrderService {
     private Strategy strategy1;
     private Strategy strategy2;
 
     @Inject
-    public Order1(
+    public OrderService(
             @Strategy1 Strategy strategy1,
             @Strategy2 Strategy strategy2) {
         this.strategy1 = strategy1;

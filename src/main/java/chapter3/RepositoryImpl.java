@@ -1,4 +1,4 @@
-package order3;
+package chapter3;
 
 public class RepositoryImpl implements Repository {
 }

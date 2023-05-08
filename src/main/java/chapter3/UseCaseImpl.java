@@ -1,13 +1,12 @@
-package order3;
+package chapter3;
 
 import com.google.inject.Inject;
-import strategy.Strategy;
 
-public class StrategyImpl3 implements Strategy {
+public class UseCaseImpl implements UseCase {
     private final Repository repository;
 
     @Inject
-    public StrategyImpl3(Repository repository) {
+    public UseCaseImpl(Repository repository) {
         this.repository = repository;
     }
 

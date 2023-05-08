@@ -1,4 +1,4 @@
-package order1;
+package chapter1;
 
 
 import com.google.inject.Guice;
@@ -9,12 +9,12 @@ import strategy.StrategyImpl2;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Order1Test {
+public class OrderServiceTest {
 
     @Test
     public void testInjection() {
         Injector injector = Guice.createInjector(new Order1Module());
-        Order1 order = injector.getInstance(Order1.class);
+        OrderService order = injector.getInstance(OrderService.class);
 
         assertTrue(order.strategy1() instanceof StrategyImpl1);
         assertTrue(order.strategy2() instanceof StrategyImpl2);
