@@ -1,7 +1,5 @@
 package chapter4;
 
-import chapter5.Interface;
-import chapter5.InterfaceImpl;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.junit.jupiter.api.Test;
@@ -12,9 +10,7 @@ public class ServiceTest {
 
     @Test
     public void testInjection() {
-        Injector injector = Guice.createInjector(binder ->
-                binder.bind(BuyerService.class).toInstance(new BuyerService("Andrea"))
-        );
+        Injector injector = Guice.createInjector();
 
         Service service = injector.getInstance(Service.class);
 

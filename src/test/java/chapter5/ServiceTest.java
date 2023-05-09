@@ -10,9 +10,7 @@ public class ServiceTest {
 
     @Test
     public void testInjection() {
-        Injector injector = Guice.createInjector(
-                binder -> binder.bind(Interface.class).to(InterfaceImpl.class)
-        );
+        Injector injector = Guice.createInjector();
 
         Service service = injector.getInstance(Service.class);
 
