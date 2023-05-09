@@ -18,13 +18,13 @@ public class OrderService {
         this.productService = productService;
     }
 
-    public PriceService price() {
+    public PriceService priceService() {
         return priceService;
     }
 
-    public BuyerService buyer() {
+    public BuyerService buyerService() {
         return buyerService;
     }
 
-    public ProductService product() { return productService; }
+    public ProductService productService() { return productService; }
 }

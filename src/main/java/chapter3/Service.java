@@ -14,11 +14,7 @@ public class Service {
         this.priceService = priceService;
     }
 
-    public static void main(String[] args) {
-        Injector injector = Guice.createInjector();
-
-        Service instance = injector.getInstance(Service.class);
-
-        System.out.println(instance.getClass().getSimpleName());
+    public PriceService priceService() {
+        return priceService;
     }
 }

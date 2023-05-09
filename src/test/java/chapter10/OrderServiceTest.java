@@ -11,27 +11,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class OrderServiceTest {
 
     @Test
-    public void testInjection() {
-        Injector injector = Guice.createInjector(binder -> {
-            binder.bind(BuyerService.class).toInstance(new BuyerService("Walter"));
-            binder.bind(ProductService.class).to(ProductServiceImpl.class);
-        });
-        OrderService order = injector.getInstance(OrderService.class);
-
-        assertNotNull(order.price());
-        assertNotNull(order.buyer());
-        assertNotNull(order.product());
-        assertTrue(order.product() instanceof ProductServiceImpl);
-    }
-
-    @Test
     public void testInjectionWithModule() {
         Injector injector = Guice.createInjector(new OrderModule());
-        OrderService order = injector.getInstance(OrderService.class);
+        OrderService instance = injector.getInstance(OrderService.class);
 
-        assertNotNull(order.price());
-        assertNotNull(order.buyer());
-        assertNotNull(order.product());
-        assertTrue(order.product() instanceof ProductServiceImpl);
+        assertNotNull(instance.priceService());
+        assertNotNull(instance.buyerService());
+        assertNotNull(instance.productService());
+        assertTrue(instance.productService() instanceof ProductServiceImpl);
+
+        System.out.println(instance.getClass().getSimpleName());
+        System.out.println(instance.priceService().getClass().getSimpleName());
+        System.out.println(instance.buyerService().getClass().getSimpleName());
+        System.out.println(instance.productService().getClass().getSimpleName());
     }
 }
