@@ -7,9 +7,7 @@ public class OrderService {
     private Strategy strategy2;
 
     @Inject
-    public OrderService(
-            @Strategy1 Strategy strategy1,
-            @Strategy2 Strategy strategy2) {
+    public OrderService(Strategy strategy1, Strategy strategy2) {
         this.strategy1 = strategy1;
         this.strategy2 = strategy2;
     }
