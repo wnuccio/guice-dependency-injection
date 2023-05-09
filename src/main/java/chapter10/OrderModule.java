@@ -5,7 +5,7 @@ import com.google.inject.AbstractModule;
 public class OrderModule extends AbstractModule {
     @Override
     protected void configure() {
-        bind(BuyerService.class).toInstance(new BuyerService("Walter"));
+        bind(PriceService.class).toInstance(new PriceService());
         bind(ProductService.class).to(ProductServiceImpl.class);
     }
 }
