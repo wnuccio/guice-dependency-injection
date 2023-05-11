@@ -1,5 +1,7 @@
 package chapter20;
 
+import chapter20.annotation.Strategy1;
+import chapter20.annotation.Strategy2;
 import chapter20.strategy.StrategyImpl1;
 import chapter20.strategy.StrategyImpl2;
 import com.google.inject.AbstractModule;
